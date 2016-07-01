@@ -11,8 +11,7 @@ Saltstack 实现自动化部署“中小型web架构”：
   Memcached服务
   
   案例架构图如下：
-#![saltstack](https://github.com/wh211212/ops-saltstack/srv/salt/base/images/ops-saltstack.png "ops-saltstack")
-<img src="https://github.com/wh211212/ops-saltstack/srv/salt/base/images/ops-saltstack.png" alt="salt" title="ops-saltstack" />
+![saltstack](https://github.com/wh211212/ops-saltstack/srv/salt/base/images/ops-saltstack.png "ops-saltstack")
 
 2、环境规划
   环境规划包括两种：
