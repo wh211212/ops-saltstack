@@ -1,6 +1,7 @@
 base:
   '*':
     - init.env_init
+    - users.init
 prod:
   '*':
     - cluster.haproxy-service
