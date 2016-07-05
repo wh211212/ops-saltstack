@@ -49,3 +49,7 @@ https://github.com/ist0ne/salt-states
 #append
   架构优化：
   数据持久层采用MySQL，MySQL采用主从模式，提高可用性，缓冲层增加Redis服务减轻Memcached服务的压力，增加自动化部署Tomcat服务的模块，方便快速调用。
+
+#services
+  通过saltstack快速部署jdk环境，并安装tomcat服务及相关设置。
+  "db-mysql":tomcat,redis,

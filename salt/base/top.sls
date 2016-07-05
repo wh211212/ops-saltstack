@@ -10,4 +10,5 @@ prod:
   'saltstack-minion.example.com':
     - memcached.service
   'db-mysql':
-    - jdk.install
+#    - jdk.install
+    - tomcat.install
