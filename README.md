@@ -53,3 +53,11 @@ https://github.com/ist0ne/salt-states
 #services
   通过saltstack快速部署jdk环境，并安装tomcat服务及相关设置。
   "db-mysql":tomcat,redis,
+
+#LNMP架构
+  1、通过saltstack快速部署lnmp架构，修改/etc/master，添加/srv/salt/dev环境，作为分布式监控系统搭建的base环境。
+  2、使用Zabbix搭建企业级分布式监控系统。
+  3、Zabbix架构及Zabbix监控系统架构
+  ![Zabbix](https://github.com/wh211212/ops-saltstack/blob/master/salt/base/images/zabbix.png "zabbix")
+  
+  ![Zabbix-net](https://github.com/wh211212/ops-saltstack/blob/master/salt/base/images/zabbix-net.png "Zabbix分布式监控系统")
