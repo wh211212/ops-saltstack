@@ -12,3 +12,6 @@ prod:
   'db-mysql':
 #    - jdk.install
     - tomcat.install
+    - mysql.install
+    - php.install
+    - nginx.service

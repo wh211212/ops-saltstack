@@ -1,7 +1,7 @@
 pkg-php:
   pkg.installed:
     - names:
-      - mysql-devel
+#      - mysql-devel
       - openssl-devel
       - swig
       - libjpeg-turbo

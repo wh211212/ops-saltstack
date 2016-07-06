@@ -14,3 +14,5 @@ yum-list-init:
       - tree
       - hdparm
       - dmidecode
+      - iotop
+      - atop

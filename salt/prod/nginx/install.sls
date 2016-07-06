@@ -1,6 +1,7 @@
 include:
   - pcre.install
   - user.www
+  - pkg.pkg-init
 
 nginx-install:
   file.managed:
