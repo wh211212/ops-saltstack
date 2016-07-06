@@ -52,7 +52,7 @@ https://github.com/ist0ne/salt-states
 
 #services
   通过saltstack快速部署jdk环境，并安装tomcat服务及相关设置。
-  "db-mysql":tomcat,redis,
+  "db-mysql":tomcat,redis,lnmp
 
 #LNMP架构
   1、通过saltstack快速部署lnmp架构，修改/etc/master，添加/srv/salt/dev环境，作为分布式监控系统搭建的base环境。
