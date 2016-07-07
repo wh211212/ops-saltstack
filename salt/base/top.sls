@@ -15,3 +15,9 @@ prod:
     - mysql.install
     - php.install
     - nginx.service
+
+dev:
+  'db-mysql':
+    - zabbix.server
+  'saltstack-minion.example.com':
+    - zabbix.agent
