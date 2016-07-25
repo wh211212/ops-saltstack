@@ -16,3 +16,6 @@ yum-list-init:
       - dmidecode
       - iotop
       - atop
+      - glances
+#      - apachetop
+      - sharutils

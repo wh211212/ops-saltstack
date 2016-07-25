@@ -61,3 +61,6 @@ https://github.com/ist0ne/salt-states
   ![Zabbix](https://github.com/wh211212/ops-saltstack/blob/master/salt/base/images/zabbix.png "zabbix")
   
   ![Zabbix-net](https://github.com/wh211212/ops-saltstack/blob/master/salt/base/images/zabbix-net.png "Zabbix分布式监控系统")
+
+#Salt SSH
+  1、Salt Rosters
