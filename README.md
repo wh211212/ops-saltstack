@@ -9,7 +9,7 @@ Saltstack 实现自动化部署“中小型web架构”：
   Nginx服务
   PHP（FastCGI）服务
   Memcached服务
-  
+
   案例架构图如下：
 ![](https://github.com/wh211212/ops-saltstack/blob/master/salt/base/images/ops-saltstack.png "ops-saltstack")
 
@@ -22,12 +22,12 @@ Saltstack 实现自动化部署“中小型web架构”：
   案例实验环境
   saltstack-master	10.1.1.97	master、minion、Haproxy+Keepalived、Nginx+PHP	CentOS 6.8 mininal
   saltstack-minion	10.1.1.98	Minion、Memcached、Haproxy+Keepalived、Nginx+PHP	CentOS 6.8 mininal
-  
+
 2.1.2 Saltstack环境设置
   SaltStack环境设置
   使用两个环境base和prod，base环境用来存放初始化的功能，prod环境用于放置生产的配置管理功能：
   编辑master配置文件
-  [root@saltstack-master ~]# egrep -v "^#|^$" /etc/salt/master 
+  [root@saltstack-master ~]# egrep -v "^#|^$" /etc/salt/master
   #Filse Server settings
   file_roots:
     base:
@@ -40,7 +40,7 @@ Saltstack 实现自动化部署“中小型web架构”：
       - /srv/pillar/base
     prod:
       - /srv/pillar/prod
-	  
+
 参考链接：
 http://docs.saltstack.cn/zh_CN/latest/topics/tutorials/starting_states.html
 https://docs.saltstack.com/en/latest/
@@ -59,9 +59,22 @@ https://github.com/ist0ne/salt-states
   2、使用Zabbix搭建企业级分布式监控系统。
   3、Zabbix架构及Zabbix监控系统架构
   ![Zabbix](https://github.com/wh211212/ops-saltstack/blob/master/salt/base/images/zabbix.png "zabbix")
-  
+
   ![Zabbix-net](https://github.com/wh211212/ops-saltstack/blob/master/salt/base/images/zabbix-net.png "Zabbix分布式监控系统")
 
 #Salt SSH
   1、Salt Rosters
   、
+
+# saltstack 安装
+
+rpm --import https://repo.saltstack.com/yum/redhat/6/x86_64/latest/SALTSTACK-GPG-KEY.pub
+
+cat > /etc/yum.repos.d/saltstack.repo << EOF
+[saltstack-repo]
+name=SaltStack repo for RHEL/CentOS $releasever
+baseurl=https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.saltstack.com/yum/redhat/$releasever/$basearch/latest/SALTSTACK-GPG-KEY.pub  
+EOF
